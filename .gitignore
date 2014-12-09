@@ -6,9 +6,9 @@
 *.gif
 *.mp3
 *.wav
-
 *.json
-ParseStarterProject/ParseStarterProjectAppDelegate.m
+
+*.plist
 
 
 TabApp/Images.xcassets/

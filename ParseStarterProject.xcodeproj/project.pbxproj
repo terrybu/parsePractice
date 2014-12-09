@@ -29,6 +29,9 @@
 		817AD67C196B009E0014C796 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 817AD67B196B009E0014C796 /* Bolts.framework */; };
 		81DDFD1919B4A60300BE649C /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81DDFD1719B4A60300BE649C /* Parse.framework */; };
 		81DDFD1A19B4A60300BE649C /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81DDFD1819B4A60300BE649C /* ParseFacebookUtils.framework */; };
+		AAC7C6011A32321100BF73DC /* Joke.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC7C6001A32321100BF73DC /* Joke.m */; };
+		AAC7C6041A32345E00BF73DC /* JokeParse.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC7C6031A32345E00BF73DC /* JokeParse.m */; };
+		AACC47721A3774FF00EEA9F4 /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = AACC47711A3774FF00EEA9F4 /* Keys.plist */; };
 		C4C51B571613CE0800959FDC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C4C51B541613CE0800959FDC /* Default.png */; };
 		C4C51B581613CE0800959FDC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4C51B551613CE0800959FDC /* Default-568h@2x.png */; };
 		C4C51B591613CE0800959FDC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4C51B561613CE0800959FDC /* Default@2x.png */; };
@@ -68,6 +71,11 @@
 		81DDFD1719B4A60300BE649C /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		81DDFD1819B4A60300BE649C /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		97E18B1E1624CB5700B17A67 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		AAC7C5FF1A32321100BF73DC /* Joke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Joke.h; path = "../../../JestNotes - iOS/Jest Notes/Joke.h"; sourceTree = "<group>"; };
+		AAC7C6001A32321100BF73DC /* Joke.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Joke.m; path = "../../../JestNotes - iOS/Jest Notes/Joke.m"; sourceTree = "<group>"; };
+		AAC7C6021A32345E00BF73DC /* JokeParse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JokeParse.h; sourceTree = "<group>"; };
+		AAC7C6031A32345E00BF73DC /* JokeParse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JokeParse.m; sourceTree = "<group>"; };
+		AACC47711A3774FF00EEA9F4 /* Keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
 		C4C51B541613CE0800959FDC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		C4C51B551613CE0800959FDC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		C4C51B561613CE0800959FDC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
@@ -147,8 +155,13 @@
 		09ABC07713A1D52D009C3FCF /* ParseStarterProject */ = {
 			isa = PBXGroup;
 			children = (
+				AAC7C5FF1A32321100BF73DC /* Joke.h */,
+				AAC7C6001A32321100BF73DC /* Joke.m */,
+				AAC7C6021A32345E00BF73DC /* JokeParse.h */,
+				AAC7C6031A32345E00BF73DC /* JokeParse.m */,
 				09ABC08013A1D52D009C3FCF /* ParseStarterProjectAppDelegate.h */,
 				09ABC08113A1D52D009C3FCF /* ParseStarterProjectAppDelegate.m */,
+				AACC47711A3774FF00EEA9F4 /* Keys.plist */,
 				09ABC08313A1D52D009C3FCF /* MainWindow.xib */,
 				09ABC08613A1D52E009C3FCF /* ParseStarterProjectViewController.h */,
 				09ABC08713A1D52E009C3FCF /* ParseStarterProjectViewController.m */,
@@ -223,6 +236,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AACC47721A3774FF00EEA9F4 /* Keys.plist in Resources */,
 				09ABC07C13A1D52D009C3FCF /* InfoPlist.strings in Resources */,
 				09ABC08513A1D52E009C3FCF /* MainWindow.xib in Resources */,
 				09ABC08B13A1D52E009C3FCF /* ParseStarterProjectViewController.xib in Resources */,
@@ -242,6 +256,8 @@
 			files = (
 				09ABC07F13A1D52D009C3FCF /* main.m in Sources */,
 				09ABC08213A1D52D009C3FCF /* ParseStarterProjectAppDelegate.m in Sources */,
+				AAC7C6011A32321100BF73DC /* Joke.m in Sources */,
+				AAC7C6041A32345E00BF73DC /* JokeParse.m in Sources */,
 				09ABC08813A1D52E009C3FCF /* ParseStarterProjectViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
